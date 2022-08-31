@@ -9,8 +9,6 @@ if [ $1 == help ];then
 
 else
 
-echo $1 
-echo $2
 fping -q -r 1 $1
 if [ $? == 0 ];then
         echo "Local connect"
